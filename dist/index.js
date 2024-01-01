@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import fs from 'fs';
-import path from 'path';
-import execa from 'execa';
+const fs = require('fs');
+const path = require('path');
+const execa = require('execa');
 
 const targetDir = process.argv[2];
 
@@ -53,8 +53,5 @@ fs.copyFileSync(
 
 // Install dependencies
 await execa('npm install', { cwd: targetDir });
-
-// Run setup scripts (if any)
-await execa('npm run setup', { cwd: targetDir });
 
 console.log(`Your project has been created in ${targetDir}`);
