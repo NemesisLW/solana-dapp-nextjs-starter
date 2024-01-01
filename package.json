@@ -1,6 +1,6 @@
 {
-    "name": "@arghyad/create-nextjs-sol-dapp",
-    "version": "0.1.20",
+    "name": "@arghyad/create-next-sol-dapp",
+    "version": "0.0.1",
     "author": "Arghya Dutta",
     "repository": "https://github.com/NemesisLW/solana-dapp-nextjs-starter",
     "license": "MIT",
@@ -8,7 +8,7 @@
         "access": "public"
     },
     "bin": {
-        "@arghyad/create-nextjs-sol-dapp": "./dist/index.js"
+        "@arghyad/create-next-sol-dapp": "./dist/index.js"
     },
     "files": [
         "dist"
